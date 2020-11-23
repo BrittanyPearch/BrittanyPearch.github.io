@@ -34,7 +34,7 @@ video {
   align-items: center;
   line-height: 1rem;
   overflow: hidden;
-  background-color: #fff;
+  background-color: lightgreen;
 }
 
 .logo,
@@ -287,6 +287,78 @@ video {
 .h-5,
 .h-6 {
   grid-row: span 1;
+}
+
+/* Styles for embedded shop page */
+.shop-page {
+  padding: 2rem 1rem 10rem 1rem;
+}
+
+.shop-page h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.shop-page .text-box {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+.shop-box {
+  width: 266px;
+  margin: 0 auto;
+}
+
+.shop-box iframe {
+  width: 100%;
+  height: 1400px; /* 6 items tall */
+}
+
+@media (min-width: 510px) {
+  .shop-box {
+    width: 510px;
+  }
+  .shop-box iframe {
+    height: 710px; /* 3 items tall */
+  }
+}
+@media (min-width: 746px) {
+  .shop-box {
+    width: 746px;
+  }
+  .shop-box iframe {
+    height: 529px; /* 2 items tall */
+  }
+}
+
+@media (min-width: 986px) {
+  .shop-box {
+    width: 986px;
+  }
+  .shop-box iframe {
+    height: 529px; /* 2 items tall */
+  }
+}
+
+.curated-shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.shop-item p {
+  margin: 0.3rem;
+}
+
+.shop-item h2 {
+  margin-bottom: 0.3rem;
+}
+
+.shop-item a {
+  color: #000;
+}
+.shop-page {
+  background-color: rgb(99, 141, 143);
 }
 
 /* Footer Nav Extra Styles */
